@@ -19,6 +19,10 @@ const ioHandler = (req: NextApiRequest, res: NextApiResponseServerIO) => {
         // Update appointment logic here
         io.emit('appointment-update', appointment);
       });
+
+      socket.on('send-message', (message) => {
+        io.emit('chat-message', message);
+      });
     });
 
     res.socket.server.io = io;
