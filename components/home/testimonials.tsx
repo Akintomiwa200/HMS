@@ -13,7 +13,7 @@ export function HomeTestimonials() {
           </div>
         </div>
         <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 py-12 md:grid-cols-2 lg:grid-cols-3">
-          <div className="flex flex-col justify-between rounded-lg border bg-background p-6 shadow-sm transition-all hover:shadow-md">
+          <div className="flex flex-col justify-between rounded-lg border bg-background/50 backdrop-blur-sm p-8 shadow-lg transition-all hover:shadow-xl hover:scale-105 hover:bg-background/80">
             <div>
               <p className="text-md mb-4">
                 "MediCare has completely transformed how we manage patient care. The intuitive interface makes it easy to track appointments and medical records."
@@ -24,7 +24,7 @@ export function HomeTestimonials() {
               <p className="text-sm text-muted-foreground">Chief of Medicine</p>
             </div>
           </div>
-          <div className="flex flex-col justify-between rounded-lg border bg-background p-6 shadow-sm transition-all hover:shadow-md">
+          <div className="flex flex-col justify-between rounded-lg border bg-background/50 backdrop-blur-sm p-8 shadow-lg transition-all hover:shadow-xl hover:scale-105 hover:bg-background/80">
             <div>
               <p className="text-md mb-4">
                 "As a nurse, I need quick access to patient information. MediCare provides exactly that, helping me provide better care and save valuable time."
@@ -35,7 +35,7 @@ export function HomeTestimonials() {
               <p className="text-sm text-muted-foreground">Head Nurse, ICU</p>
             </div>
           </div>
-          <div className="flex flex-col justify-between rounded-lg border bg-background p-6 shadow-sm transition-all hover:shadow-md">
+          <div className="flex flex-col justify-between rounded-lg border bg-background/50 backdrop-blur-sm p-8 shadow-lg transition-all hover:shadow-xl hover:scale-105 hover:bg-background/80">
             <div>
               <p className="text-md mb-4">
                 "Booking appointments and accessing my medical history has never been easier. MediCare gives me control over my healthcare journey."
