@@ -17,6 +17,18 @@ export interface Appointment {
   notes?: string;
 }
 
+import { Server as NetServer } from 'http';
+import { NextApiResponse } from 'next';
+import { Server as ServerIO } from 'socket.io';
+
+export interface NextApiResponseServerIO extends NextApiResponse {
+  socket: Socket & {
+    server: NetServer & {
+      io: ServerIO;
+    };
+  };
+}
+
 export interface Patient {
   id: string;
   userId: string;

@@ -11,6 +11,20 @@ import { Search, Plus } from "lucide-react";
 
 export default function DoctorNotesPage() {
   const [searchQuery, setSearchQuery] = useState("");
+  const [notes, setNotes] = useState([]);
+  const [selectedNote, setSelectedNote] = useState(null);
+
+  useEffect(() => {
+    const unsubscribe = subscribeToUpdates('notes-update', (updatedNotes) => {
+      setNotes(updatedNotes);
+    });
+
+    return () => unsubscribe();
+  }, []);
+
+  const handleSaveNote = () => {
+    emitEvent('save-note', selectedNote);
+  };
 
   return (
     <div className="space-y-6">
